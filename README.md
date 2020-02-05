@@ -1,2 +1,2 @@
 # 02-Text-adventure
-Interactive fiction game
+This is my interactive fiction text adventure game.
