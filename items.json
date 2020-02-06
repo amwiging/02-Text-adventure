@@ -1,16 +1,23 @@
 {
-    "PAMPHLET": {
+    "BLASTER": {
        "exits": {},
        "actions": {
-          "read": "The pamphlet says, Welcome to Zork!"
+          "SHOOT": "Turns out this blaster is jammed and useless"
        },
-       "points": 1
+       "points": 5
     },
-    "SWORD": {
-       "exits": {
-          "CELLA": "The sword glows with a faint blue glow!"
-       },
-       "actions": {},
+    "MAP": {
+       "exits": {},
+       "actions": {
+          "READ": "The map says to go east from the control room and then north toward the escape pod."
+      },
        "points": 10
-    }
+    },
+    "FOOD": {
+      "exits": {},
+      "actions": {
+         "EAT": "That space food tasted better than expected."
+     },
+      "points": 15
+   }
  }

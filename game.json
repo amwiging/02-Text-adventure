@@ -1,0 +1,191 @@
+{
+	"CONT": {
+		"name": "Spaceship Control Room",
+        "desc": "Your spaceship is being invaded by an unknown alien species and you must escape before they get you. You are in the control room in the center of the ship",
+		"exits": [{
+			"exit": "NORTH",
+			"target": "CAPC"
+		}, {
+			"exit": "EAST",
+			"target": "HALL1"
+		}, {
+			"exit": "WEST",
+			"target": "HALL2"
+		}],
+		"items": [
+            {
+                "item": "BLASTER",
+                "desc": "A blaster is lying on the ground, next to your shipmates lifeless body.",
+                "take": "You pick the blaster up off the ground."
+            }
+        ]
+    },
+    "HALL1": {
+		"name": "East hallway",
+        "desc": "You are headed down a long hallway that gets darker as you go further.",
+		"exits": [{
+			"exit": "EAST",
+			"target": "DARK"
+		}, {
+			"exit": "WEST",
+			"target": "CONT"
+		}],
+		"items":[]
+    },
+    "HALL2": {
+		"name": "West Hallway",
+        "desc": "You are now in a hallway that looks as if an alien was here earlier. The hallway splits off 2 ways.",
+		"exits": [{
+			"exit": "EAST",
+			"target": "CONT"
+		}, {
+			"exit": "NORTH",
+			"target": "ALIEN"
+        }, {
+			"exit": "SOUTH",
+			"target": "DEADE"
+		}],
+		"items": []
+    },
+    "CAPC": {
+		"name": "Captains Quarters",
+        "desc": "This is the captains quarters, maybe there is a map to the escape pod",
+		"exits": [{
+			"exit": "EAST",
+			"target": "NOTH2"
+		}, {
+			"exit": "NORTH",
+			"target": "NOTH1"
+        }, {
+			"exit": "SOUTH",
+			"target": "CONT"
+		}, {
+            "exit": "WEST",
+            "target": "MAP"
+        }],
+		"items": []
+    },
+    "NOTH1": {
+		"name": "Nothing",
+        "desc": "Nothing here",
+		"exits": [{
+			"exit": "SOUTH",
+			"target": "CAPC"
+		}],
+		"items": []
+    },
+    "NOTH2": {
+		"name": "Nothing",
+        "desc": "Nothing here",
+		"exits": [{
+			"exit": "WEST",
+			"target": "CAPC"
+		}],
+		"items": []
+    },
+    "MAP": {
+		"name": "corner of the captains quarters",
+        "desc": "The captain has a big bookshelf of things",
+		"exits": [{
+			"exit": "EAST",
+			"target": "CAPC"
+		}],
+		"items": [
+            {
+                "item": "MAP",
+                "desc": "There is a map rolled up on the shelf",
+                "take": "You pick the map up off the shelf."
+            }
+        ]
+    },
+    "DARK": {
+		"name": "Dark Room",
+        "desc": "You are now in a room that is pitch black that seems to have no way out.",
+		"exits": [{
+			"exit": "NORTH",
+			"target": "HALLF"
+		}],
+		"items":[]
+    },
+    "HALLF": {
+		"name": "Hall towards escape",
+        "desc": "A hallway opens to reveal the escape pod at the end, but an alien jumps from the ceiling above you.",
+		"exits": [{
+			"exit": "DOWN",
+			"target": "VENT"
+        }, {
+			"exit": "UP",
+			"target": "DEAD1"
+		}, {
+			"exit": "NORTH",
+			"target": "DEAD1"
+		}, {
+			"exit": "SOUTH",
+			"target": "DEAD1"
+		}, {
+			"exit": "EAST",
+			"target": "DEAD1"
+		}, {
+			"exit": "WEST",
+			"target": "DEAD1"
+		}],
+		"items":[]
+    },
+    "VENT": {
+		"name": "vent under the floor",
+        "desc": "You think quick and jump into the vent through a hatch below you. The alien moves on.",
+		"exits": [{
+			"exit": "UP",
+			"target": "HALLS"
+		}],
+		"items":[]
+    },
+    "HALLS": {
+		"name": "hallway that leads to the escape pod",
+        "desc": "You are in front the escape pod now.",
+		"exits": [{
+			"exit": "NORTH",
+			"target": "END"
+		}],
+		"items":[]
+    },
+    "ALIEN": {
+		"name": "Room with an alien in it",
+        "desc": "You walk into a room with a alien eating what used to be a corpse in the corner, it doesn't see you yet.",
+		"exits": [{
+			"exit": "NORTH",
+			"target": "DEAD1"
+		}, {
+			"exit": "SOUTH",
+			"target": "HALL2"
+		}],
+		"items":[]
+    },
+    "DEADE": {
+		"name": "a dead end",
+        "desc": "This room leads to nowhere",
+		"exits": [{
+			"exit": "NORTH",
+			"target": "HALL2"
+		}],
+		"items":[
+            {
+                "item": "FOOD",
+                "desc": "There is a bag of food on the ground that could be helpful when escaping",
+                "take": "You pick the food up off the ground."
+            }
+        ]
+    },
+    "DEAD1": {
+		"name": "end of your life",
+        "desc": "Before you knew it, the alien jumps at you and eats you alive.",
+		"exits": [],
+		"items":[]
+    },
+    "END": {
+		"name": "Escape pod",
+        "desc": "You made it into the escape pod and live to see another day!",
+		"exits": [],
+		"items":[]
+    }
+}
